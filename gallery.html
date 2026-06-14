@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore campus life at Westridge Academy through our photo gallery — labs, sports, library, arts, and more." />
+  <title>Gallery | Westridge Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-sans bg-slate-950 text-white antialiased">
+
+  <!-- NAV -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-slate-950/80 border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/30"><svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.22L20.12 9 12 12.78 3.88 9 12 5.22zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div><span class="text-lg font-bold tracking-tight"><span class="text-white">Westridge</span><span class="text-blue-400"> Academy</span></span></a>
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html"    class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Home</a>
+          <a href="about.html"    class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">About</a>
+          <a href="programs.html" class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Programs</a>
+          <a href="gallery.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Gallery</a>
+          <a href="faculty.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Faculty</a>
+          <a href="events.html"   class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Events</a>
+          <a href="contact.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Contact</a>
+        </div>
+        <div class="hidden md:flex"><a href="contact.html" class="px-5 py-2 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 rounded-lg shadow-lg shadow-blue-500/25 transition-all duration-200 hover:scale-105">Apply Now</a></div>
+        <button id="mobile-toggle" aria-label="Toggle menu" class="md:hidden p-2 text-slate-400 hover:text-white hover:bg-white/8 rounded-lg transition-colors"><svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg><svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+      </div>
+      <div id="mobile-menu" class="md:hidden max-h-0 opacity-0"><div class="py-4 space-y-1 border-t border-white/8"><a href="index.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Home</a><a href="about.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">About</a><a href="programs.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Programs</a><a href="gallery.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Gallery</a><a href="faculty.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Faculty</a><a href="events.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Events</a><a href="contact.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Contact</a><div class="pt-2"><a href="contact.html" class="block w-full text-center px-5 py-2.5 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg">Apply Now</a></div></div></div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="relative pt-32 pb-20 page-hero-gradient overflow-hidden">
+    <div class="absolute inset-0 opacity-15"><img src="school_library.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="absolute inset-0 opacity-5" style="background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:50px 50px"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <nav class="breadcrumb flex items-center justify-center gap-2 text-sm text-slate-500 mb-6"><a href="index.html" class="hover:text-blue-400">Home</a><span>/</span><span class="text-slate-300">Gallery</span></nav>
+      <h1 class="font-display text-5xl lg:text-7xl font-bold text-white mb-4 animate-fade-in-up">Campus <span class="shimmer-text">Gallery</span></h1>
+      <p class="text-slate-300 text-xl max-w-2xl mx-auto animate-fade-in-up" style="animation-delay:.1s">A glimpse into daily life at Westridge Academy — click any photo to enlarge.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY FILTER -->
+  <section class="py-24 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center gap-3 mb-14 reveal">
+        <button class="filter-tab active" data-group="gal" data-filter="all">All Photos</button>
+        <button class="filter-tab" data-group="gal" data-filter="campus">Campus</button>
+        <button class="filter-tab" data-group="gal" data-filter="science">Science</button>
+        <button class="filter-tab" data-group="gal" data-filter="library">Library</button>
+        <button class="filter-tab" data-group="gal" data-filter="sports">Sports</button>
+      </div>
+
+      <!-- Mosaic Grid -->
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <!-- Hero – tall -->
+        <div data-category="campus" class="gallery-img reveal col-span-2 lg:col-span-1 row-span-2 rounded-2xl overflow-hidden cursor-pointer group relative" style="min-height:360px">
+          <img src="school_hero.png" alt="Westridge Campus" class="gallery-trigger w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+            <div><p class="font-semibold text-white">Main Campus</p><p class="text-sm text-slate-300">North entrance &amp; grounds</p></div>
+          </div>
+        </div>
+
+        <!-- Library -->
+        <div data-category="library" class="gallery-img reveal rounded-2xl overflow-hidden h-48 lg:h-60 cursor-pointer group relative" style="transition-delay:.1s">
+          <img src="school_library.png" alt="Library" class="gallery-trigger w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <div><p class="font-semibold text-white text-sm">Central Library</p><p class="text-xs text-slate-300">Over 50,000 books &amp; e-resources</p></div>
+          </div>
+        </div>
+
+        <!-- Lab -->
+        <div data-category="science" class="gallery-img reveal rounded-2xl overflow-hidden h-48 lg:h-60 cursor-pointer group relative" style="transition-delay:.2s">
+          <img src="school_lab.png" alt="Science Lab" class="gallery-trigger w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <div><p class="font-semibold text-white text-sm">STEM Lab</p><p class="text-xs text-slate-300">State-of-the-art science facilities</p></div>
+          </div>
+        </div>
+
+        <!-- Sports – wide -->
+        <div data-category="sports" class="gallery-img reveal col-span-2 rounded-2xl overflow-hidden h-48 lg:h-64 cursor-pointer group relative" style="transition-delay:.3s">
+          <img src="school_sports.png" alt="Sports Field" class="gallery-trigger w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+            <div><p class="font-semibold text-white">Sports Complex</p><p class="text-sm text-slate-300">Olympic-standard athletic facilities</p></div>
+          </div>
+        </div>
+
+        <!-- Repeat variations for richer grid -->
+        <div data-category="science" class="gallery-img reveal rounded-2xl overflow-hidden h-48 lg:h-52 cursor-pointer group relative" style="transition-delay:.35s">
+          <img src="school_lab.png" alt="Lab experiment" class="gallery-trigger w-full h-full object-cover object-top" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <div><p class="font-semibold text-white text-sm">Chemistry Lab</p><p class="text-xs text-slate-300">Hands-on experiments</p></div>
+          </div>
+        </div>
+
+        <div data-category="campus" class="gallery-img reveal rounded-2xl overflow-hidden h-48 lg:h-52 cursor-pointer group relative" style="transition-delay:.4s">
+          <img src="school_hero.png" alt="Campus grounds" class="gallery-trigger w-full h-full object-cover object-bottom" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <div><p class="font-semibold text-white text-sm">Campus Gardens</p><p class="text-xs text-slate-300">Beautiful landscaped grounds</p></div>
+          </div>
+        </div>
+
+        <div data-category="library" class="gallery-img reveal col-span-2 lg:col-span-1 rounded-2xl overflow-hidden h-48 lg:h-52 cursor-pointer group relative" style="transition-delay:.45s">
+          <img src="school_library.png" alt="Study area" class="gallery-trigger w-full h-full object-cover object-bottom" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <div><p class="font-semibold text-white text-sm">Study Lounge</p><p class="text-xs text-slate-300">Quiet collaborative spaces</p></div>
+          </div>
+        </div>
+
+        <div data-category="sports" class="gallery-img reveal col-span-2 rounded-2xl overflow-hidden h-48 lg:h-52 cursor-pointer group relative" style="transition-delay:.5s">
+          <img src="school_sports.png" alt="Soccer match" class="gallery-trigger w-full h-full object-cover object-center" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+            <div><p class="font-semibold text-white">Inter-School Match</p><p class="text-sm text-slate-300">Regional Championship 2025</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" role="dialog" aria-label="Image lightbox">
+    <button onclick="document.getElementById('lightbox').classList.remove('open')" class="absolute top-6 right-6 w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white text-xl transition-colors z-10">✕</button>
+    <img id="lightbox-img" src="" alt="Full size" />
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div><div class="flex items-center gap-3 mb-4"><div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.22L20.12 9 12 12.78 3.88 9 12 5.22zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div><span class="text-lg font-bold">Westridge <span class="text-blue-400">Academy</span></span></div><p class="text-slate-500 text-sm leading-relaxed">Shaping the leaders of tomorrow through world-class education.</p></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Pages</h4><ul class="space-y-2.5"><li><a href="index.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Home</a></li><li><a href="about.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">About Us</a></li><li><a href="programs.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Programs</a></li><li><a href="gallery.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Gallery</a></li><li><a href="faculty.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Faculty</a></li><li><a href="events.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Events</a></li></ul></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Admissions</h4><ul class="space-y-2.5"><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Apply Now</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Tuition &amp; Fees</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Financial Aid</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Campus Tours</a></li></ul></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Stay Updated</h4><p class="text-slate-500 text-sm mb-4">Get the latest news and events.</p><div class="flex gap-2"><input id="newsletter-email" type="email" placeholder="Your email" class="flex-1 min-w-0 px-3 py-2.5 bg-slate-900 border border-slate-700 focus:border-blue-500 rounded-lg text-sm text-white placeholder-slate-600 outline-none transition-colors" /><button id="newsletter-btn" type="button" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm font-medium transition-colors flex-shrink-0">→</button></div></div>
+      </div>
+      <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-slate-600 text-sm">© 2026 Westridge Academy. All rights reserved.</p>
+        <div class="flex gap-6"><a href="#" class="text-slate-600 hover:text-slate-400 text-sm transition-colors">Privacy Policy</a><a href="#" class="text-slate-600 hover:text-slate-400 text-sm transition-colors">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

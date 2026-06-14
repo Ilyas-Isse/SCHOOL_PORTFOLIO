@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about Westridge Academy's history, mission, vision, values, and the story behind 40+ years of academic excellence." />
+  <title>About Us | Westridge Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-sans bg-slate-950 text-white antialiased">
+
+  <!-- NAV -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-slate-950/80 border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/30"><svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.22L20.12 9 12 12.78 3.88 9 12 5.22zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div>
+          <span class="text-lg font-bold tracking-tight"><span class="text-white">Westridge</span><span class="text-blue-400"> Academy</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html"    class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Home</a>
+          <a href="about.html"    class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">About</a>
+          <a href="programs.html" class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Programs</a>
+          <a href="gallery.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Gallery</a>
+          <a href="faculty.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Faculty</a>
+          <a href="events.html"   class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Events</a>
+          <a href="contact.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Contact</a>
+        </div>
+        <div class="hidden md:flex"><a href="contact.html" class="px-5 py-2 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 rounded-lg shadow-lg shadow-blue-500/25 transition-all duration-200 hover:scale-105">Apply Now</a></div>
+        <button id="mobile-toggle" aria-label="Toggle menu" class="md:hidden p-2 text-slate-400 hover:text-white hover:bg-white/8 rounded-lg transition-colors">
+          <svg id="icon-open"  class="w-6 h-6"        fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="md:hidden max-h-0 opacity-0">
+        <div class="py-4 space-y-1 border-t border-white/8">
+          <a href="index.html"    class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Home</a>
+          <a href="about.html"    class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">About</a>
+          <a href="programs.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Programs</a>
+          <a href="gallery.html"  class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Gallery</a>
+          <a href="faculty.html"  class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Faculty</a>
+          <a href="events.html"   class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Events</a>
+          <a href="contact.html"  class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Contact</a>
+          <div class="pt-2"><a href="contact.html" class="block w-full text-center px-5 py-2.5 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg">Apply Now</a></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="relative pt-32 pb-20 page-hero-gradient overflow-hidden">
+    <div class="absolute inset-0 opacity-15"><img src="school_hero.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="absolute inset-0 opacity-5" style="background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:50px 50px"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <nav class="breadcrumb flex items-center justify-center gap-2 text-sm text-slate-500 mb-6">
+        <a href="index.html" class="hover:text-blue-400">Home</a>
+        <span>/</span><span class="text-slate-300">About Us</span>
+      </nav>
+      <h1 class="font-display text-5xl lg:text-7xl font-bold text-white mb-4 animate-fade-in-up">About <span class="shimmer-text">Westridge</span></h1>
+      <p class="text-slate-300 text-xl max-w-2xl mx-auto animate-fade-in-up" style="animation-delay:.1s">Forty years of shaping minds, building character, and inspiring greatness.</p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="py-24 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="reveal relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/30">
+            <img src="school_hero.png" alt="Campus" class="w-full h-[480px] object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-5 left-5 glass-card rounded-xl p-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center"><svg class="w-5 h-5 text-slate-900" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></div>
+                <div><div class="text-sm font-bold text-white">#1 Ranked School</div><div class="text-xs text-slate-400">National Education Board 2025</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -top-4 -right-4 w-32 h-32 rounded-2xl bg-blue-600/10 border border-blue-500/20 -z-10"></div>
+          <div class="absolute -bottom-4 -left-4 w-24 h-24 rounded-full bg-amber-500/10 border border-amber-500/20 -z-10"></div>
+        </div>
+        <div class="reveal space-y-6">
+          <span class="inline-block text-blue-400 text-sm font-semibold tracking-widest uppercase">Our Story</span>
+          <h2 class="font-display text-4xl font-bold text-white">A Legacy Built on Passion &amp; Purpose</h2>
+          <p class="text-slate-400 leading-relaxed">Founded in 1985 by a visionary group of educators, Westridge Academy began as a small community school with a bold idea: that every child deserves a world-class education. Over four decades, that vision grew into a nationally recognized institution of excellence.</p>
+          <p class="text-slate-400 leading-relaxed">Today our 50-acre campus hosts state-of-the-art science labs, an Olympic-standard sports complex, a 400-seat performing arts theatre, and one of the finest libraries in the region. Yet our greatest asset remains our people — teachers who inspire, students who dare to dream, and a community that lifts each other up.</p>
+          <p class="text-slate-400 leading-relaxed">Over 15,000 alumni have gone on to lead corporations, advance science, create art, and serve communities around the globe. We are immensely proud of each one.</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1 bg-slate-800 border border-slate-700 text-slate-300 text-sm rounded-full">🎯 Excellence</span>
+            <span class="px-3 py-1 bg-slate-800 border border-slate-700 text-slate-300 text-sm rounded-full">🤝 Integrity</span>
+            <span class="px-3 py-1 bg-slate-800 border border-slate-700 text-slate-300 text-sm rounded-full">💡 Innovation</span>
+            <span class="px-3 py-1 bg-slate-800 border border-slate-700 text-slate-300 text-sm rounded-full">🌍 Inclusion</span>
+            <span class="px-3 py-1 bg-slate-800 border border-slate-700 text-slate-300 text-sm rounded-full">💪 Resilience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION / VISION / VALUES -->
+  <section class="py-24 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 reveal">
+        <span class="inline-block text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3">What Drives Us</span>
+        <h2 class="font-display text-4xl font-bold text-white mb-2">Mission, Vision &amp; Values</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="reveal bg-blue-600/10 border border-blue-500/20 rounded-2xl p-8 hover:bg-blue-600/15 transition-colors">
+          <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mb-5"><svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div>
+          <h3 class="text-xl font-bold text-white mb-3">Our Mission</h3>
+          <p class="text-slate-400 leading-relaxed">To empower every student to discover their unique potential and contribute meaningfully to society through rigorous academics, holistic development, and compassionate mentorship.</p>
+        </div>
+        <div class="reveal bg-amber-500/8 border border-amber-500/20 rounded-2xl p-8 hover:bg-amber-500/12 transition-colors" style="transition-delay:.1s">
+          <div class="w-12 h-12 bg-amber-500/15 rounded-xl flex items-center justify-center mb-5"><svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg></div>
+          <h3 class="text-xl font-bold text-white mb-3">Our Vision</h3>
+          <p class="text-slate-400 leading-relaxed">To be the foremost beacon of transformative education — inspiring the next generation of global leaders, innovators, artists, and changemakers who shape a better world.</p>
+        </div>
+        <div class="reveal bg-emerald-500/8 border border-emerald-500/20 rounded-2xl p-8 hover:bg-emerald-500/12 transition-colors" style="transition-delay:.2s">
+          <div class="w-12 h-12 bg-emerald-500/15 rounded-xl flex items-center justify-center mb-5"><svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div>
+          <h3 class="text-xl font-bold text-white mb-3">Our Values</h3>
+          <ul class="text-slate-400 space-y-2 text-sm">
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Academic Excellence &amp; Curiosity</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Integrity &amp; Ethical Leadership</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Innovation &amp; Critical Thinking</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Inclusion &amp; Global Citizenship</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Resilience &amp; Growth Mindset</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="py-24 bg-slate-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 reveal">
+        <span class="inline-block text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3">Our Journey</span>
+        <h2 class="font-display text-4xl font-bold text-white mb-2">40 Years of Milestones</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="space-y-10">
+        <!-- Each milestone -->
+        <div class="reveal flex gap-6 items-start">
+          <div class="flex-shrink-0 w-24 text-right"><span class="text-blue-400 font-bold text-lg">1985</span></div>
+          <div class="flex-shrink-0 flex flex-col items-center"><div class="timeline-dot"></div><div class="flex-1 w-0.5 bg-blue-800/50 mt-2" style="height:60px"></div></div>
+          <div class="pb-4"><h3 class="font-bold text-white mb-1">Academy Founded</h3><p class="text-slate-400 text-sm">Westridge Academy opens its doors with 120 students and 12 dedicated teachers in a modest campus.</p></div>
+        </div>
+        <div class="reveal flex gap-6 items-start" style="transition-delay:.1s">
+          <div class="flex-shrink-0 w-24 text-right"><span class="text-blue-400 font-bold text-lg">1993</span></div>
+          <div class="flex-shrink-0 flex flex-col items-center"><div class="timeline-dot"></div><div class="flex-1 w-0.5 bg-blue-800/50 mt-2" style="height:60px"></div></div>
+          <div class="pb-4"><h3 class="font-bold text-white mb-1">STEM Center Opens</h3><p class="text-slate-400 text-sm">State-of-the-art science and technology center inaugurated, attracting students from across the region.</p></div>
+        </div>
+        <div class="reveal flex gap-6 items-start" style="transition-delay:.15s">
+          <div class="flex-shrink-0 w-24 text-right"><span class="text-blue-400 font-bold text-lg">2002</span></div>
+          <div class="flex-shrink-0 flex flex-col items-center"><div class="timeline-dot"></div><div class="flex-1 w-0.5 bg-blue-800/50 mt-2" style="height:60px"></div></div>
+          <div class="pb-4"><h3 class="font-bold text-white mb-1">National #1 Ranking</h3><p class="text-slate-400 text-sm">Westridge earns its first national #1 ranking by the National Education Board — a title held for 12 consecutive years.</p></div>
+        </div>
+        <div class="reveal flex gap-6 items-start" style="transition-delay:.2s">
+          <div class="flex-shrink-0 w-24 text-right"><span class="text-blue-400 font-bold text-lg">2010</span></div>
+          <div class="flex-shrink-0 flex flex-col items-center"><div class="timeline-dot"></div><div class="flex-1 w-0.5 bg-blue-800/50 mt-2" style="height:60px"></div></div>
+          <div class="pb-4"><h3 class="font-bold text-white mb-1">Sports Complex &amp; Arts Theatre</h3><p class="text-slate-400 text-sm">New Olympic-standard athletic facilities and a 400-seat performing arts theatre completed.</p></div>
+        </div>
+        <div class="reveal flex gap-6 items-start" style="transition-delay:.25s">
+          <div class="flex-shrink-0 w-24 text-right"><span class="text-blue-400 font-bold text-lg">2020</span></div>
+          <div class="flex-shrink-0 flex flex-col items-center"><div class="timeline-dot"></div><div class="flex-1 w-0.5 bg-blue-800/50 mt-2" style="height:60px"></div></div>
+          <div class="pb-4"><h3 class="font-bold text-white mb-1">Digital &amp; AI Curriculum</h3><p class="text-slate-400 text-sm">Launched pioneering AI &amp; machine learning curriculum, placing Westridge at the forefront of 21st-century education.</p></div>
+        </div>
+        <div class="reveal flex gap-6 items-start" style="transition-delay:.3s">
+          <div class="flex-shrink-0 w-24 text-right"><span class="text-amber-400 font-bold text-lg">2026</span></div>
+          <div class="flex-shrink-0 flex flex-col items-center"><div class="timeline-dot" style="background:#f59e0b;box-shadow:0 0 0 3px rgba(245,158,11,0.3)"></div></div>
+          <div class="pb-4"><h3 class="font-bold text-white mb-1">40th Anniversary</h3><p class="text-slate-400 text-sm">Celebrating four decades of excellence with 15,000+ alumni, 40+ programs, and a global impact that continues to grow.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="py-20 bg-gradient-to-r from-blue-900/40 via-slate-900 to-blue-900/40 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5" style="background-image:radial-gradient(circle,#3b82f6 1px,transparent 1px);background-size:30px 30px"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div class="reveal group"><div class="text-5xl font-bold text-blue-400 mb-2 group-hover:scale-110 transition-transform">40+</div><div class="text-slate-400 text-sm uppercase tracking-widest">Years of Excellence</div></div>
+        <div class="reveal group" style="transition-delay:.1s"><div class="text-5xl font-bold text-amber-400 mb-2 group-hover:scale-110 transition-transform">15K+</div><div class="text-slate-400 text-sm uppercase tracking-widest">Alumni Worldwide</div></div>
+        <div class="reveal group" style="transition-delay:.2s"><div class="text-5xl font-bold text-blue-400 mb-2 group-hover:scale-110 transition-transform">320+</div><div class="text-slate-400 text-sm uppercase tracking-widest">Awards Won</div></div>
+        <div class="reveal group" style="transition-delay:.3s"><div class="text-5xl font-bold text-amber-400 mb-2 group-hover:scale-110 transition-transform">98%</div><div class="text-slate-400 text-sm uppercase tracking-widest">University Placement</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (same as index) -->
+  <footer class="bg-slate-950 border-t border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div><div class="flex items-center gap-3 mb-4"><div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.22L20.12 9 12 12.78 3.88 9 12 5.22zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div><span class="text-lg font-bold">Westridge <span class="text-blue-400">Academy</span></span></div><p class="text-slate-500 text-sm leading-relaxed">Shaping the leaders of tomorrow through world-class education, innovation, and character development.</p></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Pages</h4><ul class="space-y-2.5"><li><a href="index.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Home</a></li><li><a href="about.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">About Us</a></li><li><a href="programs.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Programs</a></li><li><a href="gallery.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Gallery</a></li><li><a href="faculty.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Faculty</a></li><li><a href="events.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Events</a></li></ul></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Admissions</h4><ul class="space-y-2.5"><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Apply Now</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Tuition &amp; Fees</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Financial Aid</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Campus Tours</a></li></ul></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Stay Updated</h4><p class="text-slate-500 text-sm mb-4">Get the latest news and events.</p><div class="flex gap-2"><input id="newsletter-email" type="email" placeholder="Your email" class="flex-1 min-w-0 px-3 py-2.5 bg-slate-900 border border-slate-700 focus:border-blue-500 rounded-lg text-sm text-white placeholder-slate-600 outline-none transition-colors" /><button id="newsletter-btn" type="button" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm font-medium transition-colors flex-shrink-0">→</button></div></div>
+      </div>
+      <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-slate-600 text-sm">© 2026 Westridge Academy. All rights reserved.</p>
+        <div class="flex gap-6"><a href="#" class="text-slate-600 hover:text-slate-400 text-sm transition-colors">Privacy Policy</a><a href="#" class="text-slate-600 hover:text-slate-400 text-sm transition-colors">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

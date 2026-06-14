@@ -1,0 +1,185 @@
+/* ================================================
+   WESTRIDGE ACADEMY — Shared Stylesheet
+   ================================================ */
+
+/* ---- Animated hero gradient ---- */
+.hero-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 40%, #1d4ed8 70%, #0f172a 100%);
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease infinite;
+}
+@keyframes gradientShift {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+
+/* ---- Page hero (non-home pages) ---- */
+.page-hero-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #0f172a 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+}
+
+/* ---- Gold shimmer text ---- */
+.shimmer-text {
+  background: linear-gradient(90deg, #f59e0b, #fcd34d, #f59e0b, #fbbf24);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: 0%   center; }
+  100% { background-position: 200% center; }
+}
+
+/* ---- Glass card ---- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ---- Scroll-reveal ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Nav blur ---- */
+.nav-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ---- Active nav link ---- */
+.nav-link.active {
+  color: #60a5fa;
+  background: rgba(255,255,255,0.08);
+}
+
+/* ---- Program card icon hover ---- */
+.program-card:hover .program-icon {
+  transform: scale(1.15) rotate(5deg);
+}
+.program-icon {
+  transition: transform 0.3s ease;
+}
+
+/* ---- Testimonial card ---- */
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.2);
+}
+
+/* ---- Star rating ---- */
+.stars { color: #f59e0b; }
+
+/* ---- Gallery zoom ---- */
+.gallery-img { overflow: hidden; }
+.gallery-img img { transition: transform 0.4s ease; }
+.gallery-img:hover img { transform: scale(1.08); }
+
+/* ---- Scroll indicator bounce ---- */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(8px); }
+}
+.scroll-bounce { animation: bounce 1.5s infinite; }
+
+/* ---- Fade-in-up ---- */
+@keyframes fadeInUp {
+  0%   { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
+
+/* ---- Custom scrollbar ---- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0f172a; }
+::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 3px; }
+
+/* ---- Mobile menu ---- */
+#mobile-menu {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+/* ---- Section divider line ---- */
+.section-divider {
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(to right, #3b82f6, #f59e0b);
+  border-radius: 9999px;
+  margin: 1rem auto 0;
+}
+
+/* ---- Breadcrumb ---- */
+.breadcrumb a { transition: color 0.2s; }
+.breadcrumb a:hover { color: #93c5fd; }
+
+/* ---- Table styles (faculty page) ---- */
+.data-table th { background: rgba(37,99,235,0.12); }
+.data-table tr:hover td { background: rgba(255,255,255,0.03); }
+
+/* ---- Timeline (about page) ---- */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #3b82f6 20%, #3b82f6 80%, transparent);
+  transform: translateX(-50%);
+}
+.timeline-dot {
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: #3b82f6;
+  border: 3px solid #0f172a;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Filter tab (programs, events) ---- */
+.filter-tab {
+  padding: 0.375rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.filter-tab:hover { color: #fff; border-color: rgba(255,255,255,0.25); }
+.filter-tab.active {
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(59,130,246,0.35);
+}
+
+/* ---- Lightbox overlay ---- */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+#lightbox.open { display: flex; }
+#lightbox img { max-width: 90vw; max-height: 88vh; border-radius: 12px; }

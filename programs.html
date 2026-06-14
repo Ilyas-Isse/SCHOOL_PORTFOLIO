@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Westridge Academy's 40+ academic programs across STEM, Arts, Business, Languages, Sports, and Computer Science." />
+  <title>Programs | Westridge Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-sans bg-slate-950 text-white antialiased">
+
+  <!-- NAV -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-slate-950/80 border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/30"><svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.22L20.12 9 12 12.78 3.88 9 12 5.22zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div><span class="text-lg font-bold tracking-tight"><span class="text-white">Westridge</span><span class="text-blue-400"> Academy</span></span></a>
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html"    class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Home</a>
+          <a href="about.html"    class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">About</a>
+          <a href="programs.html" class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Programs</a>
+          <a href="gallery.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Gallery</a>
+          <a href="faculty.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Faculty</a>
+          <a href="events.html"   class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Events</a>
+          <a href="contact.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Contact</a>
+        </div>
+        <div class="hidden md:flex"><a href="contact.html" class="px-5 py-2 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 rounded-lg shadow-lg shadow-blue-500/25 transition-all duration-200 hover:scale-105">Apply Now</a></div>
+        <button id="mobile-toggle" aria-label="Toggle menu" class="md:hidden p-2 text-slate-400 hover:text-white hover:bg-white/8 rounded-lg transition-colors"><svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg><svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+      </div>
+      <div id="mobile-menu" class="md:hidden max-h-0 opacity-0"><div class="py-4 space-y-1 border-t border-white/8"><a href="index.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Home</a><a href="about.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">About</a><a href="programs.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Programs</a><a href="gallery.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Gallery</a><a href="faculty.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Faculty</a><a href="events.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Events</a><a href="contact.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Contact</a><div class="pt-2"><a href="contact.html" class="block w-full text-center px-5 py-2.5 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg">Apply Now</a></div></div></div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="relative pt-32 pb-20 page-hero-gradient overflow-hidden">
+    <div class="absolute inset-0 opacity-15"><img src="school_lab.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="absolute inset-0 opacity-5" style="background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:50px 50px"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <nav class="breadcrumb flex items-center justify-center gap-2 text-sm text-slate-500 mb-6"><a href="index.html" class="hover:text-blue-400">Home</a><span>/</span><span class="text-slate-300">Programs</span></nav>
+      <h1 class="font-display text-5xl lg:text-7xl font-bold text-white mb-4 animate-fade-in-up">Our <span class="shimmer-text">Programs</span></h1>
+      <p class="text-slate-300 text-xl max-w-2xl mx-auto animate-fade-in-up" style="animation-delay:.1s">40+ programs designed to challenge, inspire, and prepare you for the future.</p>
+    </div>
+  </section>
+
+  <!-- FILTER TABS + PROGRAMS GRID -->
+  <section class="py-24 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap justify-center gap-3 mb-14 reveal">
+        <button class="filter-tab active" data-group="prog" data-filter="all">All Programs</button>
+        <button class="filter-tab" data-group="prog" data-filter="stem">STEM</button>
+        <button class="filter-tab" data-group="prog" data-filter="arts">Arts</button>
+        <button class="filter-tab" data-group="prog" data-filter="business">Business</button>
+        <button class="filter-tab" data-group="prog" data-filter="language">Languages</button>
+        <button class="filter-tab" data-group="prog" data-filter="sports">Sports</button>
+        <button class="filter-tab" data-group="prog" data-filter="tech">Technology</button>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="programs-grid">
+
+        <!-- STEM -->
+        <div data-category="stem" class="program-card reveal group bg-slate-950 border border-slate-800 hover:border-blue-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1">
+          <div class="program-icon w-14 h-14 bg-blue-600/15 rounded-xl flex items-center justify-center mb-5"><svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+          <div class="flex items-center justify-between mb-2"><h3 class="text-xl font-bold text-white">STEM &amp; Sciences</h3><span class="px-2 py-0.5 bg-blue-600/10 text-blue-400 text-xs rounded-full border border-blue-500/20">Core</span></div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Cutting-edge laboratories, robotics, AI, and engineering. Students learn through hands-on experiments and real-world projects.</p>
+          <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-blue-600/10 text-blue-400 text-xs rounded-md">Robotics</span><span class="px-2 py-1 bg-blue-600/10 text-blue-400 text-xs rounded-md">AI/ML</span><span class="px-2 py-1 bg-blue-600/10 text-blue-400 text-xs rounded-md">Engineering</span><span class="px-2 py-1 bg-blue-600/10 text-blue-400 text-xs rounded-md">Physics</span></div>
+          <div class="text-xs text-slate-500 flex items-center gap-4"><span>📅 Grades 6–12</span><span>⏱ Full Year</span></div>
+        </div>
+
+        <!-- Arts -->
+        <div data-category="arts" class="program-card reveal group bg-slate-950 border border-slate-800 hover:border-amber-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/10 hover:-translate-y-1" style="transition-delay:.05s">
+          <div class="program-icon w-14 h-14 bg-amber-500/10 rounded-xl flex items-center justify-center mb-5"><svg class="w-7 h-7 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg></div>
+          <div class="flex items-center justify-between mb-2"><h3 class="text-xl font-bold text-white">Arts &amp; Humanities</h3><span class="px-2 py-0.5 bg-amber-500/10 text-amber-400 text-xs rounded-full border border-amber-500/20">Creative</span></div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Visual arts, music, drama, literature, and cultural studies. Expression, craft, and critical interpretation at every level.</p>
+          <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs rounded-md">Fine Arts</span><span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs rounded-md">Music</span><span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs rounded-md">Theatre</span><span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs rounded-md">Literature</span></div>
+          <div class="text-xs text-slate-500 flex items-center gap-4"><span>📅 Grades 6–12</span><span>⏱ Full Year</span></div>
+        </div>
+
+        <!-- Business -->
+        <div data-category="business" class="program-card reveal group bg-slate-950 border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/10 hover:-translate-y-1" style="transition-delay:.1s">
+          <div class="program-icon w-14 h-14 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-5"><svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
+          <div class="flex items-center justify-between mb-2"><h3 class="text-xl font-bold text-white">Business &amp; Economics</h3><span class="px-2 py-0.5 bg-emerald-500/10 text-emerald-400 text-xs rounded-full border border-emerald-500/20">Career</span></div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Entrepreneurship, finance, marketing, and real-world business simulations guided by industry experts and CEOs.</p>
+          <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs rounded-md">Finance</span><span class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs rounded-md">Marketing</span><span class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs rounded-md">Startup</span><span class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs rounded-md">Economics</span></div>
+          <div class="text-xs text-slate-500 flex items-center gap-4"><span>📅 Grades 9–12</span><span>⏱ Full Year</span></div>
+        </div>
+
+        <!-- Languages -->
+        <div data-category="language" class="program-card reveal group bg-slate-950 border border-slate-800 hover:border-purple-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-1" style="transition-delay:.15s">
+          <div class="program-icon w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center mb-5"><svg class="w-7 h-7 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg></div>
+          <div class="flex items-center justify-between mb-2"><h3 class="text-xl font-bold text-white">Languages &amp; Culture</h3><span class="px-2 py-0.5 bg-purple-500/10 text-purple-400 text-xs rounded-full border border-purple-500/20">Global</span></div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Immersive language programs in 8 world languages with exchange programs, cultural diplomacy, and global pen-pal initiatives.</p>
+          <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Spanish</span><span class="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Mandarin</span><span class="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">French</span><span class="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Arabic</span></div>
+          <div class="text-xs text-slate-500 flex items-center gap-4"><span>📅 Grades 6–12</span><span>⏱ Full Year</span></div>
+        </div>
+
+        <!-- Sports -->
+        <div data-category="sports" class="program-card reveal group bg-slate-950 border border-slate-800 hover:border-rose-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1" style="transition-delay:.2s">
+          <div class="program-icon w-14 h-14 bg-rose-500/10 rounded-xl flex items-center justify-center mb-5"><svg class="w-7 h-7 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg></div>
+          <div class="flex items-center justify-between mb-2"><h3 class="text-xl font-bold text-white">Sports &amp; Athletics</h3><span class="px-2 py-0.5 bg-rose-500/10 text-rose-400 text-xs rounded-full border border-rose-500/20">Athletics</span></div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Olympic-standard facilities and championship-level coaching across 20+ sports disciplines. Compete regionally and nationally.</p>
+          <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-rose-500/10 text-rose-400 text-xs rounded-md">Soccer</span><span class="px-2 py-1 bg-rose-500/10 text-rose-400 text-xs rounded-md">Swimming</span><span class="px-2 py-1 bg-rose-500/10 text-rose-400 text-xs rounded-md">Athletics</span><span class="px-2 py-1 bg-rose-500/10 text-rose-400 text-xs rounded-md">Basketball</span></div>
+          <div class="text-xs text-slate-500 flex items-center gap-4"><span>📅 Grades 6–12</span><span>⏱ Seasonal</span></div>
+        </div>
+
+        <!-- Tech -->
+        <div data-category="tech" class="program-card reveal group bg-slate-950 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-1" style="transition-delay:.25s">
+          <div class="program-icon w-14 h-14 bg-cyan-500/10 rounded-xl flex items-center justify-center mb-5"><svg class="w-7 h-7 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div>
+          <div class="flex items-center justify-between mb-2"><h3 class="text-xl font-bold text-white">Computer Science</h3><span class="px-2 py-0.5 bg-cyan-500/10 text-cyan-400 text-xs rounded-full border border-cyan-500/20">Tech</span></div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Programming, cybersecurity, data science, game development, and web development — taught by real industry professionals.</p>
+          <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 text-xs rounded-md">Python</span><span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 text-xs rounded-md">Web Dev</span><span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 text-xs rounded-md">Cybersec</span><span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 text-xs rounded-md">Data Sci</span></div>
+          <div class="text-xs text-slate-500 flex items-center gap-4"><span>📅 Grades 7–12</span><span>⏱ Full Year</span></div>
+        </div>
+
+        <!-- Environmental Science -->
+        <div data-category="stem" class="program-card reveal group bg-slate-950 border border-slate-800 hover:border-green-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/10 hover:-translate-y-1" style="transition-delay:.3s">
+          <div class="program-icon w-14 h-14 bg-green-500/10 rounded-xl flex items-center justify-center mb-5"><svg class="w-7 h-7 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg></div>
+          <div class="flex items-center justify-between mb-2"><h3 class="text-xl font-bold text-white">Environmental Science</h3><span class="px-2 py-0.5 bg-green-500/10 text-green-400 text-xs rounded-full border border-green-500/20">Science</span></div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Ecology, climate science, sustainability projects, and field research. Cultivating the next generation of environmental stewards.</p>
+          <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">Ecology</span><span class="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">Climate</span><span class="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">Field Research</span></div>
+          <div class="text-xs text-slate-500 flex items-center gap-4"><span>📅 Grades 8–12</span><span>⏱ Full Year</span></div>
+        </div>
+
+        <!-- Media & Journalism -->
+        <div data-category="arts" class="program-card reveal group bg-slate-950 border border-slate-800 hover:border-pink-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/10 hover:-translate-y-1" style="transition-delay:.35s">
+          <div class="program-icon w-14 h-14 bg-pink-500/10 rounded-xl flex items-center justify-center mb-5"><svg class="w-7 h-7 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.069A1 1 0 0121 8.82v6.36a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg></div>
+          <div class="flex items-center justify-between mb-2"><h3 class="text-xl font-bold text-white">Media &amp; Journalism</h3><span class="px-2 py-0.5 bg-pink-500/10 text-pink-400 text-xs rounded-full border border-pink-500/20">Creative</span></div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Broadcast journalism, photography, documentary filmmaking, and digital media. Run our school newspaper and video channel.</p>
+          <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-pink-500/10 text-pink-400 text-xs rounded-md">Journalism</span><span class="px-2 py-1 bg-pink-500/10 text-pink-400 text-xs rounded-md">Film</span><span class="px-2 py-1 bg-pink-500/10 text-pink-400 text-xs rounded-md">Photography</span></div>
+          <div class="text-xs text-slate-500 flex items-center gap-4"><span>📅 Grades 9–12</span><span>⏱ Full Year</span></div>
+        </div>
+
+        <!-- Finance & Investing -->
+        <div data-category="business" class="program-card reveal group bg-slate-950 border border-slate-800 hover:border-teal-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-teal-500/10 hover:-translate-y-1" style="transition-delay:.4s">
+          <div class="program-icon w-14 h-14 bg-teal-500/10 rounded-xl flex items-center justify-center mb-5"><svg class="w-7 h-7 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div class="flex items-center justify-between mb-2"><h3 class="text-xl font-bold text-white">Finance &amp; Investing</h3><span class="px-2 py-0.5 bg-teal-500/10 text-teal-400 text-xs rounded-full border border-teal-500/20">Finance</span></div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Real-world investment simulations, personal finance, stock market analysis, and financial literacy for the modern economy.</p>
+          <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-teal-500/10 text-teal-400 text-xs rounded-md">Investing</span><span class="px-2 py-1 bg-teal-500/10 text-teal-400 text-xs rounded-md">Stocks</span><span class="px-2 py-1 bg-teal-500/10 text-teal-400 text-xs rounded-md">Crypto</span></div>
+          <div class="text-xs text-slate-500 flex items-center gap-4"><span>📅 Grades 10–12</span><span>⏱ Semester</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle,#fff 1px,transparent 1px);background-size:25px 25px"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center reveal">
+      <h2 class="font-display text-4xl font-bold text-white mb-4">Find Your Perfect Program</h2>
+      <p class="text-blue-200 text-lg mb-8">Talk to our admissions team and discover which programs align with your passions and goals.</p>
+      <a href="contact.html" class="px-8 py-3.5 bg-white text-blue-900 font-bold rounded-xl hover:bg-blue-50 transition-all duration-200 hover:scale-105 shadow-xl">Contact Admissions →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div><div class="flex items-center gap-3 mb-4"><div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.22L20.12 9 12 12.78 3.88 9 12 5.22zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div><span class="text-lg font-bold">Westridge <span class="text-blue-400">Academy</span></span></div><p class="text-slate-500 text-sm leading-relaxed">Shaping the leaders of tomorrow through world-class education.</p></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Pages</h4><ul class="space-y-2.5"><li><a href="index.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Home</a></li><li><a href="about.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">About Us</a></li><li><a href="programs.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Programs</a></li><li><a href="gallery.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Gallery</a></li><li><a href="faculty.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Faculty</a></li><li><a href="events.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Events</a></li></ul></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Admissions</h4><ul class="space-y-2.5"><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Apply Now</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Tuition &amp; Fees</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Financial Aid</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Campus Tours</a></li></ul></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Stay Updated</h4><p class="text-slate-500 text-sm mb-4">Get the latest news and events.</p><div class="flex gap-2"><input id="newsletter-email" type="email" placeholder="Your email" class="flex-1 min-w-0 px-3 py-2.5 bg-slate-900 border border-slate-700 focus:border-blue-500 rounded-lg text-sm text-white placeholder-slate-600 outline-none transition-colors" /><button id="newsletter-btn" type="button" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm font-medium transition-colors flex-shrink-0">→</button></div></div>
+      </div>
+      <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-slate-600 text-sm">© 2026 Westridge Academy. All rights reserved.</p>
+        <div class="flex gap-6"><a href="#" class="text-slate-600 hover:text-slate-400 text-sm transition-colors">Privacy Policy</a><a href="#" class="text-slate-600 hover:text-slate-400 text-sm transition-colors">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

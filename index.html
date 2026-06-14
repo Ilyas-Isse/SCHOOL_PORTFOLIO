@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Westridge Academy — A premier institution dedicated to academic excellence, innovation, and holistic student development since 1985." />
+  <title>Westridge Academy | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-sans bg-slate-950 text-white antialiased">
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-slate-950/80 border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/30">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.22L20.12 9 12 12.78 3.88 9 12 5.22zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+          </div>
+          <span class="text-lg font-bold tracking-tight"><span class="text-white">Westridge</span><span class="text-blue-400"> Academy</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html"    class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Home</a>
+          <a href="about.html"    class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">About</a>
+          <a href="programs.html" class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Programs</a>
+          <a href="gallery.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Gallery</a>
+          <a href="faculty.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Faculty</a>
+          <a href="events.html"   class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Events</a>
+          <a href="contact.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Contact</a>
+        </div>
+        <div class="hidden md:flex">
+          <a href="contact.html" class="px-5 py-2 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 rounded-lg shadow-lg shadow-blue-500/25 transition-all duration-200 hover:scale-105">Apply Now</a>
+        </div>
+        <button id="mobile-toggle" aria-label="Toggle menu" class="md:hidden p-2 text-slate-400 hover:text-white hover:bg-white/8 rounded-lg transition-colors">
+          <svg id="icon-open"  class="w-6 h-6"        fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="md:hidden max-h-0 opacity-0">
+        <div class="py-4 space-y-1 border-t border-white/8">
+          <a href="index.html"    class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-colors">Home</a>
+          <a href="about.html"    class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-colors">About</a>
+          <a href="programs.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-colors">Programs</a>
+          <a href="gallery.html"  class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-colors">Gallery</a>
+          <a href="faculty.html"  class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-colors">Faculty</a>
+          <a href="events.html"   class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-colors">Events</a>
+          <a href="contact.html"  class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-colors">Contact</a>
+          <div class="pt-2"><a href="contact.html" class="block w-full text-center px-5 py-2.5 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg">Apply Now</a></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="relative min-h-screen hero-gradient flex items-center overflow-hidden">
+    <div class="absolute inset-0 opacity-20"><img src="school_hero.png" alt="Campus" class="w-full h-full object-cover" /></div>
+    <div class="absolute top-20 right-10 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-20 left-10 w-80 h-80 bg-blue-800/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute inset-0 opacity-5" style="background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:50px 50px"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/15 border border-blue-500/30 text-blue-300 text-sm font-medium mb-8 animate-fade-in-up">
+        <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+        Established 1985 · Shaping Futures
+      </div>
+      <h1 class="font-display text-5xl sm:text-6xl lg:text-8xl font-bold leading-tight mb-6 animate-fade-in-up" style="animation-delay:.1s">
+        <span class="text-white">Where Excellence</span><br /><span class="shimmer-text">Meets Ambition</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up" style="animation-delay:.2s">
+        Westridge Academy nurtures curious minds, resilient leaders, and compassionate citizens through world-class education in a vibrant, inclusive community.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in-up" style="animation-delay:.3s">
+        <a href="about.html"    class="w-full sm:w-auto px-8 py-3.5 text-base font-semibold bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 rounded-xl shadow-xl shadow-blue-500/30 transition-all duration-200 hover:scale-105">Explore Our School</a>
+        <a href="programs.html" class="w-full sm:w-auto px-8 py-3.5 text-base font-semibold bg-white/8 hover:bg-white/15 border border-white/15 rounded-xl transition-all duration-200 hover:scale-105">View Programs</a>
+      </div>
+      <!-- Stats -->
+      <div class="animate-fade-in-up" style="animation-delay:.4s">
+        <div class="inline-grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden shadow-2xl">
+          <div class="glass-card px-8 py-5 text-center"><div class="text-3xl font-bold text-white">2,400</div><div class="text-xs text-slate-400 mt-1 uppercase tracking-widest">Students</div></div>
+          <div class="glass-card px-8 py-5 text-center"><div class="text-3xl font-bold text-white">180</div><div class="text-xs text-slate-400 mt-1 uppercase tracking-widest">Faculty</div></div>
+          <div class="glass-card px-8 py-5 text-center"><div class="text-3xl font-bold text-white">40<span class="text-blue-400">+</span></div><div class="text-xs text-slate-400 mt-1 uppercase tracking-widest">Programs</div></div>
+          <div class="glass-card px-8 py-5 text-center"><div class="text-3xl font-bold text-white">98<span class="text-blue-400">%</span></div><div class="text-xs text-slate-400 mt-1 uppercase tracking-widest">Pass Rate</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-bounce text-slate-500">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ========== QUICK INTRO ========== -->
+  <section class="py-20 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <span class="inline-block text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3">Who We Are</span>
+          <h2 class="font-display text-4xl font-bold text-white mb-5">A Legacy of Excellence Since 1985</h2>
+          <p class="text-slate-400 leading-relaxed mb-4">Founded with a vision to transform education, Westridge Academy has grown from a modest institution into one of the nation's most distinguished schools. Our campus spans over 50 acres of state-of-the-art facilities.</p>
+          <p class="text-slate-400 leading-relaxed mb-6">We believe that education is more than academics — it's about building character, developing critical thinking, and preparing students to thrive in an ever-changing world.</p>
+          <a href="about.html" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600/15 border border-blue-500/30 text-blue-400 hover:bg-blue-600/25 rounded-xl text-sm font-semibold transition-all duration-200 hover:scale-105">
+            Learn More About Us
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="reveal relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/30">
+            <img src="school_hero.png" alt="Westridge campus" class="w-full h-80 object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-5 left-5 glass-card rounded-xl p-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center">
+                  <svg class="w-5 h-5 text-slate-900" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                </div>
+                <div><div class="text-sm font-bold text-white">#1 Ranked School</div><div class="text-xs text-slate-400">National Education Board 2025</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="py-20 bg-gradient-to-r from-blue-900/40 via-slate-900 to-blue-900/40 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5" style="background-image:radial-gradient(circle,#3b82f6 1px,transparent 1px);background-size:30px 30px"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div class="reveal group"><div class="text-5xl font-bold text-blue-400 mb-2 group-hover:scale-110 transition-transform duration-300">40+</div><div class="text-slate-400 text-sm uppercase tracking-widest">Years of Excellence</div></div>
+        <div class="reveal group" style="transition-delay:.1s"><div class="text-5xl font-bold text-amber-400 mb-2 group-hover:scale-110 transition-transform duration-300">15K+</div><div class="text-slate-400 text-sm uppercase tracking-widest">Alumni Worldwide</div></div>
+        <div class="reveal group" style="transition-delay:.2s"><div class="text-5xl font-bold text-blue-400 mb-2 group-hover:scale-110 transition-transform duration-300">320+</div><div class="text-slate-400 text-sm uppercase tracking-widest">Awards Won</div></div>
+        <div class="reveal group" style="transition-delay:.3s"><div class="text-5xl font-bold text-amber-400 mb-2 group-hover:scale-110 transition-transform duration-300">98%</div><div class="text-slate-400 text-sm uppercase tracking-widest">University Placement</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED PROGRAMS ========== -->
+  <section class="py-20 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 reveal">
+        <span class="inline-block text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3">What We Offer</span>
+        <h2 class="font-display text-4xl font-bold text-white mb-2">Featured Programs</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        <div class="reveal program-card group bg-slate-900 border border-slate-800 hover:border-blue-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1">
+          <div class="program-icon w-14 h-14 bg-blue-600/15 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">STEM &amp; Sciences</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Cutting-edge labs, robotics, AI, and engineering programs that push the boundaries of discovery.</p>
+          <div class="flex gap-2"><span class="px-2 py-1 bg-blue-600/10 text-blue-400 text-xs rounded-md">Robotics</span><span class="px-2 py-1 bg-blue-600/10 text-blue-400 text-xs rounded-md">AI/ML</span><span class="px-2 py-1 bg-blue-600/10 text-blue-400 text-xs rounded-md">Engineering</span></div>
+        </div>
+        <div class="reveal program-card group bg-slate-900 border border-slate-800 hover:border-amber-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/10 hover:-translate-y-1" style="transition-delay:.05s">
+          <div class="program-icon w-14 h-14 bg-amber-500/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Arts &amp; Humanities</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Creative expression through visual arts, music, drama, literature, and cultural studies.</p>
+          <div class="flex gap-2"><span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs rounded-md">Fine Arts</span><span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs rounded-md">Music</span><span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs rounded-md">Theatre</span></div>
+        </div>
+        <div class="reveal program-card group bg-slate-900 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-1" style="transition-delay:.1s">
+          <div class="program-icon w-14 h-14 bg-cyan-500/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Computer Science</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">Programming, cybersecurity, data science, and web development taught by industry professionals.</p>
+          <div class="flex gap-2"><span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 text-xs rounded-md">Python</span><span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 text-xs rounded-md">Web Dev</span><span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 text-xs rounded-md">Cybersec</span></div>
+        </div>
+      </div>
+      <div class="text-center reveal"><a href="programs.html" class="inline-flex items-center gap-2 px-6 py-3 border border-slate-700 hover:border-blue-500/50 text-slate-300 hover:text-white rounded-xl text-sm font-medium transition-all duration-200">View All Programs <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a></div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="py-20 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 reveal">
+        <span class="inline-block text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3">What People Say</span>
+        <h2 class="font-display text-4xl font-bold text-white mb-2">Voices of Westridge</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="testimonial-card reveal bg-slate-950 border border-slate-800 rounded-2xl p-6">
+          <div class="stars text-lg mb-4">★★★★★</div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">"Westridge didn't just prepare my daughter academically — it gave her the confidence, character, and drive to pursue her dreams at Harvard."</p>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-sm font-bold">EP</div><div><div class="text-sm font-semibold text-white">Emily Parker</div><div class="text-xs text-slate-500">Parent — Class of 2024</div></div></div>
+        </div>
+        <div class="testimonial-card reveal bg-slate-950 border border-slate-800 rounded-2xl p-6" style="transition-delay:.1s">
+          <div class="stars text-lg mb-4">★★★★★</div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">"The teachers here genuinely care. My teacher stayed after school every day until I understood. That kind of dedication changed my life."</p>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-sm font-bold text-slate-900">TN</div><div><div class="text-sm font-semibold text-white">Tyler Nguyen</div><div class="text-xs text-slate-500">Alumni — Class of 2023</div></div></div>
+        </div>
+        <div class="testimonial-card reveal bg-slate-950 border border-slate-800 rounded-2xl p-6" style="transition-delay:.2s">
+          <div class="stars text-lg mb-4">★★★★★</div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">"As an educator of 30 years, I can say Westridge's curriculum and culture are exceptional. The holistic approach is truly world-class."</p>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center text-sm font-bold">LB</div><div><div class="text-sm font-semibold text-white">Dr. Lisa Barnes</div><div class="text-xs text-slate-500">Education Board Member</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="py-16 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle,#fff 1px,transparent 1px);background-size:25px 25px"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center reveal">
+      <h2 class="font-display text-4xl font-bold text-white mb-4">Ready to Join Westridge Academy?</h2>
+      <p class="text-blue-200 text-lg mb-8">Applications are now open for the 2026–2027 academic year. Secure your child's future today.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="px-8 py-3.5 bg-white text-blue-900 font-bold rounded-xl hover:bg-blue-50 transition-all duration-200 hover:scale-105 shadow-xl">Apply Now →</a>
+        <a href="about.html"   class="px-8 py-3.5 bg-white/10 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-200">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-slate-950 border-t border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div class="lg:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.22L20.12 9 12 12.78 3.88 9 12 5.22zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div>
+            <span class="text-lg font-bold">Westridge <span class="text-blue-400">Academy</span></span>
+          </div>
+          <p class="text-slate-500 text-sm leading-relaxed mb-5">Shaping the leaders of tomorrow through world-class education, innovation, and character development.</p>
+          <div class="flex gap-3">
+            <a href="#" aria-label="Facebook"  class="w-8 h-8 bg-slate-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" aria-label="Twitter"   class="w-8 h-8 bg-slate-800 hover:bg-sky-500 rounded-lg flex items-center justify-center transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+            <a href="#" aria-label="Instagram" class="w-8 h-8 bg-slate-800 hover:bg-pink-600 rounded-lg flex items-center justify-center transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Pages</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html"    class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Home</a></li>
+            <li><a href="about.html"    class="text-slate-500 hover:text-blue-400 text-sm transition-colors">About Us</a></li>
+            <li><a href="programs.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Programs</a></li>
+            <li><a href="gallery.html"  class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Gallery</a></li>
+            <li><a href="faculty.html"  class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Faculty</a></li>
+            <li><a href="events.html"   class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Admissions</h4>
+          <ul class="space-y-2.5">
+            <li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Apply Now</a></li>
+            <li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Tuition &amp; Fees</a></li>
+            <li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Financial Aid</a></li>
+            <li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Campus Tours</a></li>
+            <li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Open House</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Stay Updated</h4>
+          <p class="text-slate-500 text-sm mb-4">Get the latest news and events.</p>
+          <div class="flex gap-2">
+            <input id="newsletter-email" type="email" placeholder="Your email" class="flex-1 min-w-0 px-3 py-2.5 bg-slate-900 border border-slate-700 focus:border-blue-500 rounded-lg text-sm text-white placeholder-slate-600 outline-none transition-colors" />
+            <button id="newsletter-btn" type="button" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm font-medium transition-colors flex-shrink-0">→</button>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-slate-600 text-sm">© 2026 Westridge Academy. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="text-slate-600 hover:text-slate-400 text-sm transition-colors">Privacy Policy</a>
+          <a href="#" class="text-slate-600 hover:text-slate-400 text-sm transition-colors">Terms of Use</a>
+          <a href="#" class="text-slate-600 hover:text-slate-400 text-sm transition-colors">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

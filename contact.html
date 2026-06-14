@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Westridge Academy — admissions inquiries, campus tours, financial aid, and more. We'd love to hear from you." />
+  <title>Contact & Admissions | Westridge Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-sans bg-slate-950 text-white antialiased">
+
+  <!-- NAV -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-slate-950/80 border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/30"><svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.22L20.12 9 12 12.78 3.88 9 12 5.22zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div><span class="text-lg font-bold tracking-tight"><span class="text-white">Westridge</span><span class="text-blue-400"> Academy</span></span></a>
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html"    class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Home</a>
+          <a href="about.html"    class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">About</a>
+          <a href="programs.html" class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Programs</a>
+          <a href="gallery.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Gallery</a>
+          <a href="faculty.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Faculty</a>
+          <a href="events.html"   class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Events</a>
+          <a href="contact.html"  class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg transition-all duration-200">Contact</a>
+        </div>
+        <div class="hidden md:flex"><a href="contact.html" class="px-5 py-2 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 rounded-lg shadow-lg shadow-blue-500/25 transition-all duration-200 hover:scale-105">Apply Now</a></div>
+        <button id="mobile-toggle" aria-label="Toggle menu" class="md:hidden p-2 text-slate-400 hover:text-white hover:bg-white/8 rounded-lg transition-colors"><svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg><svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+      </div>
+      <div id="mobile-menu" class="md:hidden max-h-0 opacity-0"><div class="py-4 space-y-1 border-t border-white/8"><a href="index.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Home</a><a href="about.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">About</a><a href="programs.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Programs</a><a href="gallery.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Gallery</a><a href="faculty.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Faculty</a><a href="events.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Events</a><a href="contact.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:text-white hover:bg-white/8 rounded-lg">Contact</a><div class="pt-2"><a href="contact.html" class="block w-full text-center px-5 py-2.5 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg">Apply Now</a></div></div></div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="relative pt-32 pb-20 page-hero-gradient overflow-hidden">
+    <div class="absolute inset-0 opacity-5" style="background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:50px 50px"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <nav class="breadcrumb flex items-center justify-center gap-2 text-sm text-slate-500 mb-6"><a href="index.html" class="hover:text-blue-400">Home</a><span>/</span><span class="text-slate-300">Contact</span></nav>
+      <h1 class="font-display text-5xl lg:text-7xl font-bold text-white mb-4 animate-fade-in-up">Get In <span class="shimmer-text">Touch</span></h1>
+      <p class="text-slate-300 text-xl max-w-2xl mx-auto animate-fade-in-up" style="animation-delay:.1s">We'd love to hear from you — whether you're applying, visiting, or just curious about Westridge.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT MAIN -->
+  <section class="py-24 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-14">
+
+        <!-- Info Side -->
+        <div class="reveal space-y-8">
+          <div>
+            <h2 class="font-display text-3xl font-bold text-white mb-3">Let's Start a Conversation</h2>
+            <p class="text-slate-400 leading-relaxed">Whether you're a prospective student, parent, alumni, or potential partner — our team is here to help. Reach out through any of the channels below.</p>
+          </div>
+
+          <!-- Contact Cards -->
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-5 bg-slate-950 border border-slate-800 hover:border-blue-500/30 rounded-xl transition-colors group">
+              <div class="w-11 h-11 bg-blue-600/15 group-hover:bg-blue-600/25 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors"><svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+              <div><div class="text-sm font-semibold text-white mb-0.5">Campus Address</div><div class="text-sm text-slate-400">123 Academy Drive, Knowledge Park<br/>New York, NY 10001, USA</div></div>
+            </div>
+            <div class="flex items-start gap-4 p-5 bg-slate-950 border border-slate-800 hover:border-blue-500/30 rounded-xl transition-colors group">
+              <div class="w-11 h-11 bg-blue-600/15 group-hover:bg-blue-600/25 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors"><svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+              <div><div class="text-sm font-semibold text-white mb-0.5">Email Us</div><div class="text-sm text-slate-400">admissions@westridgeacademy.edu<br/><span class="text-slate-500">info@westridgeacademy.edu</span></div></div>
+            </div>
+            <div class="flex items-start gap-4 p-5 bg-slate-950 border border-slate-800 hover:border-blue-500/30 rounded-xl transition-colors group">
+              <div class="w-11 h-11 bg-blue-600/15 group-hover:bg-blue-600/25 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors"><svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
+              <div><div class="text-sm font-semibold text-white mb-0.5">Call Us</div><div class="text-sm text-slate-400">+1 (800) 555-WEST<br/><span class="text-slate-500">Mon–Fri, 8:00 AM – 5:00 PM EST</span></div></div>
+            </div>
+            <div class="flex items-start gap-4 p-5 bg-slate-950 border border-slate-800 hover:border-blue-500/30 rounded-xl transition-colors group">
+              <div class="w-11 h-11 bg-blue-600/15 group-hover:bg-blue-600/25 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors"><svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+              <div><div class="text-sm font-semibold text-white mb-0.5">Office Hours</div><div class="text-sm text-slate-400">Monday – Friday: 8:00 AM – 5:00 PM<br/><span class="text-slate-500">Saturday: 9:00 AM – 1:00 PM</span></div></div>
+            </div>
+          </div>
+
+          <!-- Open House Banner -->
+          <div class="p-6 bg-gradient-to-r from-blue-600/20 to-blue-800/20 border border-blue-500/30 rounded-2xl">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-2xl">🎓</span>
+              <span class="text-blue-300 font-semibold text-lg">Open House — August 10, 2026</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-4">Tour our campus, meet faculty, and see what makes Westridge extraordinary. Free admission for all prospective families.</p>
+            <a href="events.html" class="inline-block px-5 py-2 bg-blue-600/20 border border-blue-500/40 text-blue-300 text-sm font-medium rounded-lg hover:bg-blue-600/30 transition-colors">View All Events →</a>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="reveal">
+          <form id="contact-form" class="bg-slate-950 border border-slate-800 rounded-2xl p-8 space-y-5">
+            <h2 class="text-2xl font-bold text-white mb-2">Send Us a Message</h2>
+            <p class="text-slate-500 text-sm mb-6">We typically respond within one business day.</p>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-slate-300 mb-1.5">First Name <span class="text-rose-400">*</span></label>
+                <input id="first-name" type="text" required placeholder="John" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 hover:border-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl text-white placeholder-slate-600 text-sm transition-all duration-200 outline-none" />
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-medium text-slate-300 mb-1.5">Last Name <span class="text-rose-400">*</span></label>
+                <input id="last-name" type="text" required placeholder="Smith" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 hover:border-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl text-white placeholder-slate-600 text-sm transition-all duration-200 outline-none" />
+              </div>
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-300 mb-1.5">Email Address <span class="text-rose-400">*</span></label>
+              <input id="email" type="email" required placeholder="john@example.com" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 hover:border-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl text-white placeholder-slate-600 text-sm transition-all duration-200 outline-none" />
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-medium text-slate-300 mb-1.5">Phone Number</label>
+              <input id="phone" type="tel" placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 hover:border-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl text-white placeholder-slate-600 text-sm transition-all duration-200 outline-none" />
+            </div>
+
+            <div>
+              <label for="inquiry-type" class="block text-sm font-medium text-slate-300 mb-1.5">Inquiry Type <span class="text-rose-400">*</span></label>
+              <select id="inquiry-type" required class="w-full px-4 py-3 bg-slate-900 border border-slate-700 hover:border-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl text-slate-300 text-sm transition-all duration-200 outline-none appearance-none">
+                <option value="">Select an option</option>
+                <option>Admissions Inquiry</option>
+                <option>Schedule a Campus Tour</option>
+                <option>Programs &amp; Curriculum</option>
+                <option>Financial Aid</option>
+                <option>Open House Registration</option>
+                <option>Faculty Recruitment</option>
+                <option>General Question</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="student-grade" class="block text-sm font-medium text-slate-300 mb-1.5">Prospective Grade Level</label>
+              <select id="student-grade" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 hover:border-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl text-slate-300 text-sm transition-all duration-200 outline-none appearance-none">
+                <option value="">Not applicable</option>
+                <option>Grade 6 (Middle School Entry)</option>
+                <option>Grade 7</option>
+                <option>Grade 8</option>
+                <option>Grade 9 (High School Entry)</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-slate-300 mb-1.5">Message <span class="text-rose-400">*</span></label>
+              <textarea id="message" rows="4" required placeholder="Tell us about your interest in Westridge Academy..." class="w-full px-4 py-3 bg-slate-900 border border-slate-700 hover:border-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl text-white placeholder-slate-600 text-sm transition-all duration-200 outline-none resize-none"></textarea>
+            </div>
+
+            <!-- Consent -->
+            <div class="flex items-start gap-3">
+              <input id="consent" type="checkbox" class="mt-1 w-4 h-4 accent-blue-500 rounded flex-shrink-0" />
+              <label for="consent" class="text-xs text-slate-500 leading-relaxed">I agree to be contacted by Westridge Academy regarding my inquiry. Your information will be handled in accordance with our Privacy Policy.</label>
+            </div>
+
+            <button id="send-message-btn" type="submit"
+              class="w-full py-3.5 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 rounded-xl shadow-lg shadow-blue-500/25 transition-all duration-200 hover:scale-[1.02] hover:shadow-blue-500/40 active:scale-[0.98]">
+              Send Message →
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="py-20 bg-slate-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 reveal">
+        <span class="inline-block text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3">FAQ</span>
+        <h2 class="font-display text-4xl font-bold text-white mb-2">Frequently Asked Questions</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="space-y-4" id="faq-container">
+
+        <div class="reveal faq-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)">
+            <span class="font-semibold text-white">When does the admissions process open?</span>
+            <svg class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-200 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4"><p class="text-slate-400 text-sm leading-relaxed">Applications for the 2026–2027 academic year open on September 1, 2026. We recommend applying early as spaces fill quickly. The priority deadline is December 1, with rolling admissions thereafter.</p></div>
+        </div>
+
+        <div class="reveal faq-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden" style="transition-delay:.05s">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)">
+            <span class="font-semibold text-white">What are the tuition fees for the 2026–2027 year?</span>
+            <svg class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-200 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4"><p class="text-slate-400 text-sm leading-relaxed">Tuition ranges from $18,500 to $24,000 per year depending on grade level. Financial aid and merit scholarships are available — over $2.4M in aid was distributed last year. Please contact our admissions office for personalized guidance.</p></div>
+        </div>
+
+        <div class="reveal faq-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden" style="transition-delay:.1s">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)">
+            <span class="font-semibold text-white">Is there a boarding option available?</span>
+            <svg class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-200 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4"><p class="text-slate-400 text-sm leading-relaxed">Yes! Our state-of-the-art boarding facility accommodates students from grades 9–12. Boarding students benefit from extended library hours, study halls, evening activities, and 24/7 pastoral care. Boarding fees are separate from tuition.</p></div>
+        </div>
+
+        <div class="reveal faq-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden" style="transition-delay:.15s">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)">
+            <span class="font-semibold text-white">What entrance exams are required?</span>
+            <svg class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-200 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4"><p class="text-slate-400 text-sm leading-relaxed">We use an in-house assessment in English, Mathematics, and General Reasoning, along with a portfolio review and student interview. Previous school transcripts and two teacher recommendations are also required. No external standardized tests are needed.</p></div>
+        </div>
+
+        <div class="reveal faq-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden" style="transition-delay:.2s">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)">
+            <span class="font-semibold text-white">Do you offer extracurricular activities?</span>
+            <svg class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-200 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4"><p class="text-slate-400 text-sm leading-relaxed">Absolutely! We offer 60+ extracurricular clubs and activities including Model UN, Debate Club, Robotics Team, School Orchestra, Drama Society, Coding Club, and community service initiatives. Students are encouraged to pursue diverse interests beyond academics.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <section class="bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="reveal rounded-2xl overflow-hidden border border-slate-800 h-64 lg:h-80 relative flex items-center justify-center bg-slate-950">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-600/15 rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+          <p class="text-white font-semibold mb-1">123 Academy Drive, Knowledge Park</p>
+          <p class="text-slate-400 text-sm mb-4">New York, NY 10001, USA</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="px-5 py-2 bg-blue-600/20 border border-blue-500/30 text-blue-400 text-sm font-medium rounded-lg hover:bg-blue-600/30 transition-colors">Open in Google Maps →</a>
+        </div>
+        <!-- Decorative grid -->
+        <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image:linear-gradient(rgba(59,130,246,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.5) 1px,transparent 1px);background-size:40px 40px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div><div class="flex items-center gap-3 mb-4"><div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.22L20.12 9 12 12.78 3.88 9 12 5.22zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div><span class="text-lg font-bold">Westridge <span class="text-blue-400">Academy</span></span></div><p class="text-slate-500 text-sm leading-relaxed">Shaping the leaders of tomorrow through world-class education.</p></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Pages</h4><ul class="space-y-2.5"><li><a href="index.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Home</a></li><li><a href="about.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">About Us</a></li><li><a href="programs.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Programs</a></li><li><a href="gallery.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Gallery</a></li><li><a href="faculty.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Faculty</a></li><li><a href="events.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Events</a></li></ul></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Admissions</h4><ul class="space-y-2.5"><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Apply Now</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Tuition &amp; Fees</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Financial Aid</a></li><li><a href="contact.html" class="text-slate-500 hover:text-blue-400 text-sm transition-colors">Campus Tours</a></li></ul></div>
+        <div><h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Stay Updated</h4><p class="text-slate-500 text-sm mb-4">Get the latest news and events.</p><div class="flex gap-2"><input id="newsletter-email" type="email" placeholder="Your email" class="flex-1 min-w-0 px-3 py-2.5 bg-slate-900 border border-slate-700 focus:border-blue-500 rounded-lg text-sm text-white placeholder-slate-600 outline-none transition-colors" /><button id="newsletter-btn" type="button" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm font-medium transition-colors flex-shrink-0">→</button></div></div>
+      </div>
+      <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="text-slate-600 text-sm">© 2026 Westridge Academy. All rights reserved.</p><div class="flex gap-6"><a href="#" class="text-slate-600 hover:text-slate-400 text-sm transition-colors">Privacy Policy</a><a href="#" class="text-slate-600 hover:text-slate-400 text-sm transition-colors">Terms of Use</a></div></div>
+    </div>
+  </footer>
+
+  <!-- FAQ Script -->
+  <script>
+    function toggleFaq(btn) {
+      const answer = btn.nextElementSibling;
+      const icon   = btn.querySelector('.faq-icon');
+      const isOpen = !answer.classList.contains('hidden');
+      // Close all
+      document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = '');
+      if (!isOpen) {
+        answer.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+  </script>
+
+</body>
+</html>
